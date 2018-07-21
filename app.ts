@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 
 
 app.set('port', process.env.PORT || '3000');
-const server = app.listen(app.get('port'), () => {
+const server: any = app.listen(app.get('port'), () => {
     
     console.log(`Express running → PORT ${server.address().port} on mode ${process.env.NODE_ENV}` );
 });
