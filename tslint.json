@@ -1,0 +1,32 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+      "tslint:recommended"
+    ],
+    "rules": {
+      "quotemark": [
+        true,
+        "single"
+      ],
+      "member-access": [
+        true,
+        "no-public"
+      ],
+      "ordered-imports": [
+        false
+      ],
+      "max-line-length": [
+        true,
+        150
+      ],
+      "member-ordering": [
+        false
+      ],
+      "interface-name": false,
+      "object-literal-sort-keys": false,
+      "no-unused-expression": true,
+      "no-unused-variable": true,
+      "max-classes-per-file": true,
+      "one-variable-per-declaration": true
+    }
+  }

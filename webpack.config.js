@@ -1,12 +1,13 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 const dotenv = require('dotenv');
 dotenv.config();
 
 module.exports = {
     mode: process.env.NODE_ENV,
     entry: {
-        App: './app.ts'
+        App: './src/app.ts'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -23,6 +24,9 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new CleanWebpackPlugin('dist'),
+    ],
     target: 'node',
     node: {
         __dirname: false,

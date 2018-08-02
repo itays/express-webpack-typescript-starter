@@ -1,9 +1,9 @@
 {
   "files": [
-    "app.ts"
+    "src/app.ts"
   ],
   "include": [
-    "**/*.ts"
+    "src/**/*.ts"
   ],
   "compilerOptions": {
     "module": "commonjs",
